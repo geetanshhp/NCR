@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "95036679422",
+    "firebase_url": "https://adcitymart-9095a.firebaseio.com",
+    "project_id": "adcitymart-9095a",
+    "storage_bucket": "adcitymart-9095a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:95036679422:android:3db9c3d1747388d8",
+        "android_client_info": {
+          "package_name": "com.example.adcitymart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "95036679422-jp529r0ld7e9grg4ja5d66fm30k3b15b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.adcitymart",
+            "certificate_hash": "e3a45b5e9ce0439a4c4f6571fbb17b6883472c20"
+          }
+        },
+        {
+          "client_id": "95036679422-098cd8cddao481s6ckh8bs9i2n8fpq7r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJXSm5VyGLSDoERMmFmZtOy0u1mandA0Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "95036679422-098cd8cddao481s6ckh8bs9i2n8fpq7r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
