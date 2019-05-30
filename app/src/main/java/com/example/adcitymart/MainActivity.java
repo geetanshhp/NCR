@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     ProgressDialog progressDialog;
     FirebaseUser firebaseUser;
     FirebaseAuth Auth;
-    Boolean islogin = true;
+    Boolean islogin ;
     SharedPreferences sharedPreferences;
 
 
@@ -76,16 +76,26 @@ public class MainActivity extends AppCompatActivity {
             Auth.signInWithEmailAndPassword(email, pasword).addOnCompleteListener(MainActivity.this, new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
-                    if (task.isSuccessful()) {
-                        Toast.makeText(MainActivity.this, "Success", Toast.LENGTH_SHORT).show();
-                        progressDialog.dismiss();
-                        Intent intent = new Intent(MainActivity.this, Home.class);
-                        startActivity(intent);
-                        finish();
-                        islogin = true;
-                        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
-                        sharedPreferences.edit().putBoolean("Islogin", islogin).commit();
+                    if (task.isSuccessful())
+                    {
+                        boolean s = Auth.getCurrentUser().isEmailVerified();
+                        if(s)
+                        {
+                            Toast.makeText(MainActivity.this, "Success", Toast.LENGTH_SHORT).show();
+                            progressDialog.dismiss();
+                            Intent intent = new Intent(MainActivity.this, Home.class);
+                            startActivity(intent);
+                            finish();
+                            islogin = true;
+                            sharedPreferences = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
+                            sharedPreferences.edit().putBoolean("Islogin", islogin).commit();
+                        }
+                        else
+                        {
+                            Intent intent = new Intent(MainActivity.this,Not_Verified.class);
+                            startActivity(intent);
 
+                        }
 
                     } else {
                         progressDialog.dismiss();

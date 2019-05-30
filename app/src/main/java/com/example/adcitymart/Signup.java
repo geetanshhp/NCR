@@ -7,6 +7,7 @@ import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -41,6 +42,7 @@ public class Signup extends AppCompatActivity {
         Auth = FirebaseAuth.getInstance();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         initialize();
     }
 
@@ -48,6 +50,18 @@ public class Signup extends AppCompatActivity {
     {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if(item.getItemId() == android.R.id.home)
+        {
+            onBackPressed();
+            return true;
+        }
+        else
+        {
+            return super.onOptionsItemSelected(item);
+        }
     }
 
     //Method to signup user
@@ -142,6 +156,7 @@ public class Signup extends AppCompatActivity {
         layoutCpassword = findViewById(R.id.layoutConfirmPassword);
         layoutName = findViewById(R.id.inputName);
     }
+
 public void verify()
 {
 firebaseUser.sendEmailVerification().addOnCompleteListener(Signup.this, new OnCompleteListener<Void>() {
