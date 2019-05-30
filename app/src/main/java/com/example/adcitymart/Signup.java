@@ -128,6 +128,7 @@ public class Signup extends AppCompatActivity {
     }
     public void initialize()
     {
+        //ASDFGHJKL
         textView=findViewById(R.id.sign_in);
         user = findViewById(R.id.email);
         pasword = findViewById(R.id.password);
