@@ -23,11 +23,11 @@
         android:id="@+id/inputName"
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
+        android:backgroundTint="@color/colorPrimary"
         android:layout_height="wrap_content">
         <EditText
             android:drawableLeft="@drawable/person"
             android:textSize="17sp"
-            android:textColor="#fff"
             android:layout_width="260dp"
             android:hint="User Name"
             android:maxLines="1"
@@ -36,6 +36,7 @@
             android:id="@+id/name"
             android:layout_height="50sp"
             android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/colorPrimary"
             android:textColorHint="@color/colorPrimary"/>
 
     </android.support.design.widget.TextInputLayout>
@@ -43,12 +44,11 @@
         android:layout_width="wrap_content"
         android:id="@+id/inputEmail"
         android:layout_gravity="center"
-
+        android:backgroundTint="@color/colorPrimary"
         android:layout_height="wrap_content">
         <EditText
             android:drawableLeft="@drawable/mail"
             android:textSize="17sp"
-            android:textColor="#fff"
             android:layout_width="260dp"
             android:hint="Email"
             android:maxLines="1"
@@ -57,6 +57,7 @@
             android:id="@+id/email"
             android:layout_height="50sp"
             android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/colorPrimary"
             android:textColorHint="@color/colorPrimary"/>
 
 
@@ -67,6 +68,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:id="@+id/layoutPassword"
+        app:passwordToggleEnabled="true"
         android:backgroundTint="@color/colorPrimary"
         android:layout_height="wrap_content">
 
@@ -75,6 +77,7 @@
             android:textSize="17sp"
             android:layout_gravity="center"
             android:layout_width="260dp"
+            android:inputType="textPassword"
             android:hint="Password"
             android:id="@+id/password"
             android:layout_height="wrap_content"
@@ -91,10 +94,11 @@
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:backgroundTint="@color/colorPrimary"
-
+        app:passwordToggleEnabled="true"
         android:layout_height="wrap_content">
 
         <EditText
+            android:inputType="textPassword"
             android:drawableLeft="@drawable/lock"
             android:textSize="17sp"
             android:layout_gravity="center"

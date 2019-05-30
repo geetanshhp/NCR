@@ -6,4 +6,15 @@
     android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".Home">
+
+    <android.support.design.widget.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="0"
+        app:menu="@menu/menu"
+        android:id="@+id/bottomnavigation">
+    </android.support.design.widget.BottomNavigationView>
+
 </RelativeLayout>

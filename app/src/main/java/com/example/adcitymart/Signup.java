@@ -44,7 +44,8 @@ public class Signup extends AppCompatActivity {
         initialize();
     }
 
-    public void signIn(View view) {
+    public void signIn(View view)
+    {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
@@ -70,7 +71,7 @@ public class Signup extends AppCompatActivity {
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful())
                             {
-                                FirebaseUser user = Auth.getCurrentUser();
+                                firebaseUser = Auth.getCurrentUser();
                                 progressDialog.dismiss();
                                 // Sign in success, update UI with the signed-in user's information
                                 Toast.makeText(Signup.this, "success", Toast.LENGTH_SHORT).show();
@@ -81,7 +82,7 @@ public class Signup extends AppCompatActivity {
                                 {
                                     progressDialog.dismiss();
                                 // If sign in fails, display a message to the user.
-                                Toast.makeText(Signup.this, "Sorr, Not possible this time", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(Signup.this, "Sorry, Not possible this time", Toast.LENGTH_SHORT).show();
 
                             }
 
@@ -100,7 +101,8 @@ public class Signup extends AppCompatActivity {
         if (matcher.find() != true) {
             layoutEmail.setError("Please Enter Valid Email");
             flag = false;
-        } else {
+        }
+        else {
             layoutEmail.setErrorEnabled(false);
         }
         if (password.equals(cPassword) == false) {
