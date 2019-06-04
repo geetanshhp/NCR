@@ -31,14 +31,13 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
     BottomNavigationView bottomNavigationView;
     ActionBarDrawerToggle actionBarDrawerToggle;
     SharedPreferences preferences;
-    boolean flag;
     NavigationView navigationView;
     DrawerLayout drawerLayout;
     FirebaseAuth auth;
     FirebaseUser firebaseUser;
     FrameLayout frameLayout;
     TextView textView;
-        String email;
+    String email;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -57,15 +56,12 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
         drawerLayout.addDrawerListener(actionBarDrawerToggle);
         actionBarDrawerToggle.syncState();
 
-        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        //...........what is this............
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        if(!flag)
-        {
-            Intent intent = new Intent(this,MainActivity.class);
-            startActivity(intent);
-            finish();
-        }
+
+        //...........what is this............
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
 
 
 
@@ -74,7 +70,7 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
         Uemail = firebaseUser.getEmail().toString();
         name_navigation.setText(Uemail);*/
         textView=navigationView.getHeaderView(0).findViewById(R.id.idofuser);
-        email=firebaseUser.getEmail().toString();
+        //email=firebaseUser.getEmail().toString();
         textView.setText(email);
     }
 
@@ -128,14 +124,11 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
             onBackPressed();
             return true;
         }*/
-        if(actionBarDrawerToggle.onOptionsItemSelected(item))
-        {
+        if (actionBarDrawerToggle.onOptionsItemSelected(item)) {
             return true;
         }
-        else
-        {
-            return super.onOptionsItemSelected(item);
-        }
+
+        return super.onOptionsItemSelected(item);
 
     }
 

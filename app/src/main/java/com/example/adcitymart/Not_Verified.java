@@ -49,6 +49,7 @@ public class Not_Verified extends AppCompatActivity {
                     public void run()
                     {
                        Intent intent=new Intent(Not_Verified.this,Home.class);
+                        Toast.makeText(Not_Verified.this, "DOne", Toast.LENGTH_SHORT).show();
                         startActivity(intent);
                         finish();
                     }
