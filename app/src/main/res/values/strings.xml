@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">Adcity Mart</string>
+    <string name="nav_open" >Open</string>
+    <string name="nav_close">Close</string>
+    <string name="who_we_are">Around the product. Around the quality. Around the services.\n
+
+        Ad City Mart the name is enough to promote itself. It is a fastest growing company in north india.
+        We have 3+ years combined experience from top leading IT companies.\n
+        AdCity Mart is a new venture from India, a group of dedicated and talented people.
+        We providing services in advertising, direct marketing, design creation, digital marketing and online marketing.
+        We have many clients around the world. We shape your dreams and dedicated work on your thoughts and deliver the best.
+        Building business on trust and credibility is a principal and the aim of our company.
+        Therefore, you can be assured of the best quality services for your business
+
+
+
+    </string>
+    <string name="mission">To combine techno commercial strategic marketing with quality products and services at competitive
+        prices to provide the best IT services to our customers. Profitable growth to all our customer by new creativity and ideas.
+        We strive to be the acknowledged global
+        leader and preferred partner in helping our clients succeed in the world’s rapidly evolving IT companies.\n
+        Our purpose is to enable individuals and businesses to give write information.
+        We provide latest marketing information to deliver IT services to our customers.
+        We build value for our clients through the strength of our customers’ satisfaction and by consistently producing superior
+        operating results. Ad City Mart mission is to generate digital environment.
+        Provide the world’s best communications solutions that enable businesses to excel.
+
+        </string>
+    <string name="choose">We stand behind the quality of our products and appreciate your business whether it is large or small. We guarantee to make your ordering experience as simple and pleasant as possible.
+        We look forward to offering you quality service and products at reasonable prices. </string>
 </resources>

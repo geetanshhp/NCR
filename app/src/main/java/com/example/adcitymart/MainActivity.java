@@ -83,21 +83,22 @@ public class MainActivity extends AppCompatActivity {
                         {
                             Toast.makeText(MainActivity.this, "Success", Toast.LENGTH_SHORT).show();
                             progressDialog.dismiss();
-                            Intent intent = new Intent(MainActivity.this, Home.class);
+                            Intent intent = new Intent(MainActivity.this, Not_Verified.class);
                             startActivity(intent);
                             finish();
                             islogin = true;
                             sharedPreferences = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
                             sharedPreferences.edit().putBoolean("Islogin", islogin).commit();
                         }
-                        else
+                      /*  else
                         {
                             Intent intent = new Intent(MainActivity.this,Not_Verified.class);
                             startActivity(intent);
 
-                        }
+                        }*/
 
-                    } else {
+                    }
+                    else {
                         progressDialog.dismiss();
                         Toast.makeText(MainActivity.this, "Not Done", Toast.LENGTH_SHORT).show();
                     }

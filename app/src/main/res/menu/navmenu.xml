@@ -1,14 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:title="First" android:icon="@drawable/home">
+    <group android:checkableBehavior="single">
+
+
+
+    </group>
+    <item android:title="Design">
+        <menu>
+            <item android:title="Logo Designing" android:id="@+id/logo"/>
+            <item android:title="3D Modelling and Designing" android:id="@+id/threeD"/>
+
+
+        </menu>
+    </item>
+    <item android:title="Development">
+        <menu>
+            <item android:title="Website Development" android:id="@+id/webs"/>
+            <item android:title="Android Apps Development" android:id="@+id/android"/>
+            <item android:title="CMS Development" android:id="@+id/cms"/>
+            <item android:title="E-Commerce" android:id="@+id/e"/>
+
+
+        </menu>
+    </item>
+
+
+    <item android:title="Marketing">
+        <menu>
+            <item android:title="SCO" android:id="@+id/sco"/>
+            <item android:title="SMO" android:id="@+id/smo"/>
+            <item android:title="Digital Marketing" android:id="@+id/digital"/>
+            <item android:title="E-Mail Marketing" android:id="@+id/emailmarket"/>
+
+
+        </menu>
 
     </item>
-    <item android:title="second" android:icon="@drawable/contact"></item>
-    <item android:title="Third" android:icon="@drawable/person"></item>
-    <item android:title="Fourth" android:icon="@drawable/about_us"></item>
-    <item
-    android:title="First" android:icon="@drawable/home">
+
+    <item android:title="Advertising">
+        <menu>
+            <item android:title="Display Ads" android:id="@+id/ad1"/>
+            <item android:title="Social Media Ads" android:id="@+id/ad2"/>
+            <item android:title="Newspaper Ads" android:id="@+id/id3"/>
+            <item android:title="Outdoor Ads" android:id="@+id/id4"/>
+
+
+
+        </menu>
+
     </item>
+    <item android:title="Careers" android:id="@+id/career"/>
+    <item android:title="Paterns" android:id="@+id/paterns"/>
+    <item android:title="Intership" android:id="@+id/interm"/>
+    <item android:id="@+id/logout" android:title="Log Out"  android:icon="@drawable/logout"></item>
+
+
 
 </menu>
+
