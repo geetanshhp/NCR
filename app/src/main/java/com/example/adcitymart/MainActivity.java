@@ -63,10 +63,12 @@ public class MainActivity extends AppCompatActivity {
         if (password.getText().toString().isEmpty()) {
             inputpassword.setError("Plz Enter Password");
             flag = false;
-        } else {
+        }
+        else {
             inputpassword.setErrorEnabled(false);
         }
-        if (flag) {
+        if (flag)
+        {
             inputname.setErrorEnabled(false);
             inputpassword.setErrorEnabled(false);
             final String email = name.getText().toString().trim();

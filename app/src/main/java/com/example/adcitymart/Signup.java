@@ -67,7 +67,7 @@ public class Signup extends AppCompatActivity {
     //Method to signup user
     public void mysignup(View view)
     {
-        boolean flag = true;
+        boolean flag = false;
         email = user.getText().toString().trim();
         String password = pasword.getText().toString().trim();
         String cPassword = cpassword.getText().toString().trim();
@@ -143,7 +143,7 @@ public class Signup extends AppCompatActivity {
     public void initialize()
     {
         //ASDFGHJKL
-        textView=findViewById(R.id.sign_in);
+        textView=(TextView)view.findViewById(R.id.sign_in);
         user = findViewById(R.id.email);
         pasword = findViewById(R.id.password);
         Uname  =findViewById(R.id.name);
